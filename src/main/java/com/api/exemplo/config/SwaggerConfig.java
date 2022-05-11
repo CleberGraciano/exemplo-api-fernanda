@@ -8,6 +8,7 @@ import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -30,15 +31,15 @@ public class SwaggerConfig {
 
 
     private ApiInfo apiInfo() {
-        String description = "API - Exemplo cadastro de Usuario";
+        String description = "API de Usuario";
         return new ApiInfoBuilder()
-                .title("REST example")
+                .title("REST Usuarios")
                 .description(description)
-                .termsOfServiceUrl("github")
-                .license("Siamak")
+                .termsOfServiceUrl("https://github.com/CleberGraciano/exemplo-api-fernanda")
+                .license("cleber")
                 .licenseUrl("")
                 .version("1.0")
-                //               .contact(new Contact("siamak"))
+                .contact(new Contact("Cleber","","cleber_batista2010@hotmail.com"))
                 .build();
     }
 
